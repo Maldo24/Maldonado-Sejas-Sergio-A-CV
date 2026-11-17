@@ -96,8 +96,7 @@ section {
 .sec-note {
   max-width: 46ch;
   margin: 16px 0 0;
-  font-size: 19px;
-  font-style: italic;
+  font-size: 18px;
   color: var(--ink-2);
 }
 
