@@ -1,0 +1,101 @@
+/* Reset, tipografía base y primitivas de layout (contenedores, retícula, cabeceras de sección). */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+}
+
+:root {
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.55;
+  overflow-x: hidden;
+}
+
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+a { color: inherit; }
+
+::selection { background: var(--accent); color: var(--accent-ink); }
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 800;
+  text-wrap: balance;
+}
+
+/* Etiqueta pequeña en mayúsculas */
+.k {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+
+/* Contenedores */
+.gut {
+  padding-left: max(20px, env(safe-area-inset-left, 0px));
+  padding-right: max(20px, env(safe-area-inset-right, 0px));
+}
+.wrap { max-width: var(--max-width); margin: 0 auto; }
+
+/* Secciones */
+section {
+  padding-block: clamp(72px, 10vw, 140px);
+  border-bottom: 1px solid var(--rule);
+  overflow-x: clip;
+}
+
+.sec-head {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--grid-gap);
+  margin-bottom: clamp(36px, 5vw, 64px);
+  align-items: end;
+}
+.sec-head .k { grid-column: 1 / span 3; }
+.sec-head h2 {
+  grid-column: 4 / span 9;
+  font-size: clamp(40px, 7vw, 104px);
+  line-height: .9;
+  letter-spacing: -.03em;
+  font-variation-settings: "wdth" 75;
+}
+
+@media (max-width: 900px) {
+  .sec-head .k,
+  .sec-head h2 { grid-column: 1 / -1; }
+}
+
+/* Títulos que entran al hacer scroll */
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .reveal {
+      animation: slidein linear both;
+      animation-timeline: view();
+      animation-range: entry 0% cover 35%;
+    }
+    @keyframes slidein {
+      from { transform: translateX(8%); letter-spacing: .02em; }
+      to { transform: none; }
+    }
+  }
+}
