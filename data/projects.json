@@ -1,0 +1,265 @@
+[
+  {
+    "id": "pacha-x",
+    "name": "Pacha-X",
+    "year": 2026,
+    "featured": true,
+    "live": true,
+    "url": "https://nasa-space-app-challenge-tawny.vercel.app",
+    "repo": "https://github.com/Maldo24/NASA-SPACE-APP-CHALLENGE",
+    "image": "/assets/img/projects/pacha-x.svg",
+    "stack": [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Leaflet",
+      "globo 3D",
+      "Supabase",
+      "Vercel"
+    ],
+    "es": {
+      "context": "NASA Space Apps Challenge · sede Cochabamba",
+      "summary": "Mapea la Luna y Marte y conecta cada zona con sus análogos en la Tierra, para investigación y entrenamiento de astronautas. Pone en el mapa sitios de Bolivia como el Salar de Uyuni. Funciona en español e inglés.",
+      "roleTitle": "Líder técnico.",
+      "role": "Arquitectura, modelo de datos en Supabase con seguridad por filas, curaduría de datos científicos, internacionalización, despliegue y el pitch ante el jurado.",
+      "caption": "El Salar de Uyuni como análogo de Marte.",
+      "alt": "Dibujo: los polígonos de sal del Salar de Uyuni junto a un Marte con cráteres."
+    },
+    "en": {
+      "context": "NASA Space Apps Challenge · Cochabamba venue",
+      "summary": "Maps the Moon and Mars and links each region to its analogue sites on Earth, for research and astronaut training. It puts Bolivian sites such as the Salar de Uyuni on the map. Available in Spanish and English.",
+      "roleTitle": "Tech lead.",
+      "role": "Architecture, the Supabase data model with row-level security, scientific data curation, internationalisation, deployment, and the pitch to the judges.",
+      "caption": "The Salar de Uyuni as a Mars analogue.",
+      "alt": "Drawing: the salt polygons of the Salar de Uyuni next to a cratered Mars.",
+      "stack": [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Leaflet",
+        "3D globe",
+        "Supabase",
+        "Vercel"
+      ]
+    }
+  },
+  {
+    "id": "admcursos",
+    "name": "AdmCursos UMSS",
+    "year": 2026,
+    "featured": true,
+    "live": true,
+    "url": "https://valerydariana98.github.io/AdmCursosUMSS/",
+    "repo": "https://github.com/valerydariana98/AdmCursosUMSS",
+    "image": "/assets/img/projects/admcursos.svg",
+    "stack": [
+      "React",
+      "Tailwind",
+      "Express",
+      "PostgreSQL",
+      "Drizzle ORM",
+      "Zod",
+      "PDFKit"
+    ],
+    "es": {
+      "context": "Universidad Mayor de San Simón",
+      "summary": "Gestiona cursos de principio a fin: oferta, grupos, docentes, preinscripciones, asistencia, reportes y certificados en PDF que se verifican con un código QR.",
+      "roleTitle": "Arquitecto y full stack.",
+      "role": "Monorepo, base de datos PostgreSQL y migraciones, API REST, autenticación, módulo de certificados, endurecimiento de seguridad y despliegue.",
+      "caption": "Certificado verificable con código QR.",
+      "alt": "Dibujo: un certificado de la UMSS con sello y código QR."
+    },
+    "en": {
+      "context": "Universidad Mayor de San Simón",
+      "summary": "Runs a university's courses end to end: course offering, groups, instructors, pre-registration, attendance, reports, and PDF certificates that can be verified with a QR code.",
+      "roleTitle": "Architect and full stack.",
+      "role": "Monorepo, PostgreSQL schema and migrations, REST API, authentication, the certificate module, security hardening, and deployment.",
+      "caption": "A certificate you can verify by QR code.",
+      "alt": "Drawing: a UMSS certificate with a seal and a QR code."
+    }
+  },
+  {
+    "id": "gustitos",
+    "name": "Gustitos y Cafecitos",
+    "year": 2026,
+    "featured": true,
+    "live": true,
+    "url": "https://maldo24.github.io/gustitos-y-cafecitos/",
+    "repo": "https://github.com/Maldo24/gustitos-y-cafecitos",
+    "image": "/assets/img/projects/gustitos.svg",
+    "stack": [
+      "React 19",
+      "TypeScript",
+      "Express 5",
+      "MongoDB",
+      "JWT",
+      "GitHub Actions"
+    ],
+    "es": {
+      "context": "App social",
+      "summary": "Para decidir a dónde salir: armas un grupo, cada quien propone restaurantes y cafés, y votan. Invitaciones por código o enlace, notificaciones, panel de administración y recuperación de cuenta.",
+      "roleTitle": "Full stack.",
+      "role": "Todo el backend con autenticación JWT, la lógica de grupos y votación, la interfaz en React y el CI/CD con GitHub Actions.",
+      "caption": "La votación del grupo, contada a mano.",
+      "alt": "Dibujo: una votación contada con palitos; gana el café del centro."
+    },
+    "en": {
+      "context": "Social app",
+      "summary": "For deciding where to go out: you create a group, everyone suggests restaurants and cafés, and you vote. Invites by code or link, notifications, an admin panel and account recovery.",
+      "roleTitle": "Full stack.",
+      "role": "The whole backend with JWT auth, the group and voting logic, the React interface, and CI/CD with GitHub Actions.",
+      "caption": "The group vote, counted by hand.",
+      "alt": "Drawing: a vote counted in tally marks; the downtown café wins."
+    }
+  },
+  {
+    "id": "servineo",
+    "name": "Servineo",
+    "year": 2025,
+    "featured": true,
+    "live": true,
+    "url": "https://servineo-frontend-lorem.vercel.app",
+    "repo": "https://github.com/Servineo/servineo-frontend",
+    "image": "/assets/img/projects/servineo.svg",
+    "stack": [
+      "Next.js",
+      "TypeScript",
+      "Material UI",
+      "Express",
+      "MongoDB",
+      "Google Calendar API"
+    ],
+    "es": {
+      "context": "Marketplace de servicios",
+      "summary": "Conecta hogares de Cochabamba con técnicos calificados: búsqueda por ubicación, perfiles y agenda de citas en línea.",
+      "roleTitle": "Módulo de agenda.",
+      "role": "Crear, editar y cancelar citas, calendario adaptable a móvil, reglas de disponibilidad horaria e integración con Google Calendar.",
+      "caption": "La agenda de un técnico.",
+      "alt": "Dibujo: un calendario mensual con días ocupados y una cita marcada a las 10:00."
+    },
+    "en": {
+      "context": "Services marketplace",
+      "summary": "Connects households in Cochabamba with qualified technicians: location-based search, profiles, and online appointment booking.",
+      "roleTitle": "Scheduling module.",
+      "role": "Creating, editing and cancelling appointments, a responsive calendar, availability rules, and Google Calendar integration.",
+      "caption": "A technician's schedule.",
+      "alt": "Drawing: a monthly calendar with booked days and one appointment circled at 10:00."
+    }
+  },
+  {
+    "id": "sansistore",
+    "name": "SansiStore",
+    "year": 2026,
+    "featured": false,
+    "live": true,
+    "url": "https://sansistore-umss.vercel.app",
+    "stack": [
+      "Astro",
+      "React",
+      "Firebase",
+      "Playwright"
+    ],
+    "es": {
+      "summary": "E-commerce universitario con pedidos, entregas y devoluciones. Hice el flujo de devoluciones, la validación geográfica de entregas y las pruebas end-to-end."
+    },
+    "en": {
+      "summary": "A university e-commerce site with orders, deliveries and returns. I built the returns flow, geographic validation for deliveries, and the end-to-end tests."
+    }
+  },
+  {
+    "id": "devcv",
+    "name": "DevCV",
+    "year": 2026,
+    "featured": false,
+    "live": false,
+    "stack": [
+      "React",
+      "TypeScript",
+      "Tailwind"
+    ],
+    "es": {
+      "summary": "Generador de CV y portafolio para desarrolladores: registro, experiencia, habilidades, integración con GitHub y reportes."
+    },
+    "en": {
+      "summary": "A CV and portfolio generator for developers: sign-up, experience, skills, GitHub integration and reports."
+    }
+  },
+  {
+    "id": "recetitas",
+    "name": "Recetitas",
+    "year": 2026,
+    "featured": false,
+    "live": false,
+    "stack": [
+      "React",
+      "Express",
+      "PWA"
+    ],
+    "es": {
+      "summary": "App instalable (PWA) para guardar recetas y ordenarlas por antojo."
+    },
+    "en": {
+      "summary": "An installable app (PWA) for saving recipes and sorting them by craving."
+    }
+  },
+  {
+    "id": "punto-de-venta",
+    "name": "Punto de venta",
+    "year": 2026,
+    "featured": false,
+    "live": false,
+    "stack": [
+      "Python",
+      "POO"
+    ],
+    "es": {
+      "summary": "Caja con promociones combinables y pago en efectivo, tarjeta o QR. Escrito con los patrones Factory, Decorator y Strategy."
+    },
+    "en": {
+      "name": "Point of sale",
+      "summary": "A checkout with stackable promotions and cash, card or QR payments. Written with the Factory, Decorator and Strategy patterns.",
+      "stack": [
+        "Python",
+        "OOP"
+      ]
+    }
+  },
+  {
+    "id": "api-autenticacion",
+    "name": "API de autenticación",
+    "year": 2025,
+    "featured": false,
+    "live": false,
+    "stack": [
+      "Node.js",
+      "Express",
+      "MongoDB"
+    ],
+    "es": {
+      "summary": "Usuarios, roles y autorización con JWT, servida sobre HTTPS y HTTP/2."
+    },
+    "en": {
+      "name": "Auth API",
+      "summary": "Users, roles and JWT authorisation, served over HTTPS and HTTP/2."
+    }
+  },
+  {
+    "id": "gestion-academica",
+    "name": "Gestión académica",
+    "year": 2025,
+    "featured": false,
+    "live": false,
+    "stack": [
+      "PHP",
+      "MySQL",
+      "JavaScript"
+    ],
+    "es": {
+      "summary": "Plataforma para institutos con paneles de administrador, docente y estudiante, inscripciones, descuentos y comprobantes de pago."
+    },
+    "en": {
+      "name": "School management",
+      "summary": "A platform for institutes with admin, teacher and student dashboards, enrolment, discounts and payment receipts."
+    }
+  }
+]

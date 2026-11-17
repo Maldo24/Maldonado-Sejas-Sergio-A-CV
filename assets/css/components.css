@@ -85,6 +85,21 @@
   background: var(--paper-2);
   border: 1px solid var(--ink);
 }
+/* Lámina generada (proyectos sin imagen): curvas de nivel alrededor de una cima */
+.plate .plate-gen {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 8 / 5;
+  background: var(--paper-2);
+  border: 1px solid var(--ink);
+  fill: none;
+}
+.plate-gen .gm { stroke: var(--contour-index); stroke-width: 1; }
+.plate-gen .gi { stroke: var(--ink-2); stroke-width: 1.4; }
+.plate-gen .ga { fill: var(--accent); }
+.plate-gen .gt { fill: var(--ink-2); font: 500 10px var(--font-mono); letter-spacing: .08em; }
+
 .plate figcaption { font-family: var(--font-mono); font-size: 11px; line-height: 1.5; color: var(--ink-2); }
 .plate figcaption b { font-weight: 500; color: var(--ink); }
 

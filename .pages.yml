@@ -1,0 +1,117 @@
+# Configuración de Pages CMS (https://app.pagescms.org).
+# Define el formulario para editar data/projects.json sin tocar código.
+# Al guardar, Pages CMS hace un commit; la GitHub Action .github/workflows/projects.yml
+# regenera index.html y en/index.html a partir de esos datos.
+
+media:
+  input: assets/img/projects
+  output: /assets/img/projects
+  rename: safe
+  extensions: [svg, png, jpg, jpeg, webp]
+
+content:
+  - name: projects
+    label: Proyectos
+    type: file
+    path: data/projects.json
+    format: json
+    list: true
+    fields:
+      - name: name
+        label: Nombre
+        type: string
+        required: true
+
+      - name: id
+        label: Identificador (opcional)
+        description: Se usa en el enlace (#id). Si lo dejas vacío se genera a partir del nombre.
+        type: string
+
+      - name: year
+        label: Año
+        type: number
+
+      - name: featured
+        label: Destacado
+        description: Los destacados salen arriba con lámina y ficha; el resto va a la tabla «Otros proyectos».
+        type: boolean
+
+      - name: live
+        label: En línea
+        description: Márcalo si el proyecto está desplegado y se puede abrir.
+        type: boolean
+
+      - name: url
+        label: Enlace al sitio
+        type: string
+
+      - name: repo
+        label: Enlace al código
+        type: string
+
+      - name: image
+        label: Lámina (imagen)
+        description: Opcional, proporción 8:5 (por ejemplo 640×400). Sin imagen se genera una lámina de curvas de nivel.
+        type: image
+
+      - name: stack
+        label: Stack
+        description: Una tecnología por elemento.
+        type: string
+        list: true
+
+      - name: es
+        label: Español
+        type: object
+        fields:
+          - name: summary
+            label: Qué es
+            type: text
+            required: true
+          - name: context
+            label: Contexto (dónde o para quién)
+            type: string
+          - name: roleTitle
+            label: Mi rol (título corto)
+            description: Por ejemplo «Líder técnico.» Solo se muestra en los destacados.
+            type: string
+          - name: role
+            label: Qué hice
+            type: text
+          - name: caption
+            label: Pie de la lámina
+            type: string
+          - name: alt
+            label: Descripción de la imagen (accesibilidad)
+            type: string
+
+      - name: en
+        label: Inglés
+        description: Lo que dejes vacío se muestra en español.
+        type: object
+        fields:
+          - name: name
+            label: Nombre en inglés (si cambia)
+            type: string
+          - name: summary
+            label: What it is
+            type: text
+          - name: context
+            label: Context
+            type: string
+          - name: roleTitle
+            label: My role (short title)
+            type: string
+          - name: role
+            label: What I did
+            type: text
+          - name: caption
+            label: Plate caption
+            type: string
+          - name: alt
+            label: Image description (accessibility)
+            type: string
+          - name: stack
+            label: Stack en inglés (si cambia)
+            type: string
+            list: true

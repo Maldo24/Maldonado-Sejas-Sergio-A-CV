@@ -116,15 +116,15 @@
     <div class="sec-head">
       <div class="sec-id"><span class="sec-no">§ 01</span><span class="k">Trabajo</span></div>
       <div class="sec-title">
-        <h2 id="h-work" class="reveal">Cuatro proyectos en línea</h2>
+        <h2 id="h-work" class="reveal"><!-- proyectos:titulo -->Cuatro proyectos en línea<!-- /proyectos:titulo --></h2>
         <p class="sec-note">Todos hechos en equipo. En cada uno cuento qué parte fue mía.</p>
       </div>
     </div>
 
-    <ol class="work">
+    <ol class="work"><!-- proyectos:destacados -->
       <li class="p" id="pacha-x">
         <figure class="plate">
-          <img src="assets/img/pacha-x.svg" alt="Dibujo: los polígonos de sal del Salar de Uyuni junto a un Marte con cráteres." width="320" height="200" loading="lazy">
+          <img src="assets/img/projects/pacha-x.svg" alt="Dibujo: los polígonos de sal del Salar de Uyuni junto a un Marte con cráteres." width="320" height="200" loading="lazy">
           <figcaption><b>Lám. 1</b> — El Salar de Uyuni como análogo de Marte.</figcaption>
         </figure>
         <div class="p-body">
@@ -142,7 +142,7 @@
 
       <li class="p" id="admcursos">
         <figure class="plate">
-          <img src="assets/img/admcursos.svg" alt="Dibujo: un certificado de la UMSS con sello y código QR." width="320" height="200" loading="lazy">
+          <img src="assets/img/projects/admcursos.svg" alt="Dibujo: un certificado de la UMSS con sello y código QR." width="320" height="200" loading="lazy">
           <figcaption><b>Lám. 2</b> — Certificado verificable con código QR.</figcaption>
         </figure>
         <div class="p-body">
@@ -160,7 +160,7 @@
 
       <li class="p" id="gustitos">
         <figure class="plate">
-          <img src="assets/img/gustitos.svg" alt="Dibujo: una votación contada con palitos; gana el café del centro." width="320" height="200" loading="lazy">
+          <img src="assets/img/projects/gustitos.svg" alt="Dibujo: una votación contada con palitos; gana el café del centro." width="320" height="200" loading="lazy">
           <figcaption><b>Lám. 3</b> — La votación del grupo, contada a mano.</figcaption>
         </figure>
         <div class="p-body">
@@ -178,7 +178,7 @@
 
       <li class="p" id="servineo">
         <figure class="plate">
-          <img src="assets/img/servineo.svg" alt="Dibujo: un calendario mensual con días ocupados y una cita marcada a las 10:00." width="320" height="200" loading="lazy">
+          <img src="assets/img/projects/servineo.svg" alt="Dibujo: un calendario mensual con días ocupados y una cita marcada a las 10:00." width="320" height="200" loading="lazy">
           <figcaption><b>Lám. 4</b> — La agenda de un técnico.</figcaption>
         </figure>
         <div class="p-body">
@@ -193,6 +193,7 @@
           <p class="links"><a class="lnk primary" href="https://servineo-frontend-lorem.vercel.app" target="_blank" rel="noopener">Abrir el sitio ↗</a><a class="lnk" href="https://github.com/Servineo/servineo-frontend" target="_blank" rel="noopener">Código ↗</a></p>
         </div>
       </li>
+      <!-- /proyectos:destacados -->
     </ol>
   </div>
 </section>
@@ -211,49 +212,50 @@
       <thead>
         <tr><th class="k" scope="col">Hoja</th><th class="k" scope="col">Proyecto</th><th class="k" scope="col">Qué es</th><th class="k" scope="col">Stack</th><th class="k" scope="col">Año</th></tr>
       </thead>
-      <tbody>
-        <tr>
+      <tbody><!-- proyectos:otros -->
+        <tr id="sansistore">
           <td class="no">L·05</td>
           <td class="nm"><i class="sym sym-live"></i>SansiStore <a class="lnk primary" href="https://sansistore-umss.vercel.app" target="_blank" rel="noopener">abrir ↗</a></td>
           <td class="ds">E-commerce universitario con pedidos, entregas y devoluciones. Hice el flujo de devoluciones, la validación geográfica de entregas y las pruebas end-to-end.</td>
           <td class="st">Astro · React · Firebase · Playwright</td>
           <td class="yr">2026</td>
         </tr>
-        <tr>
+        <tr id="devcv">
           <td class="no">L·06</td>
           <td class="nm"><i class="sym sym-offline"></i>DevCV</td>
           <td class="ds">Generador de CV y portafolio para desarrolladores: registro, experiencia, habilidades, integración con GitHub y reportes.</td>
           <td class="st">React · TypeScript · Tailwind</td>
           <td class="yr">2026</td>
         </tr>
-        <tr>
+        <tr id="recetitas">
           <td class="no">L·07</td>
           <td class="nm"><i class="sym sym-offline"></i>Recetitas</td>
           <td class="ds">App instalable (PWA) para guardar recetas y ordenarlas por antojo.</td>
           <td class="st">React · Express · PWA</td>
           <td class="yr">2026</td>
         </tr>
-        <tr>
+        <tr id="punto-de-venta">
           <td class="no">L·08</td>
           <td class="nm"><i class="sym sym-offline"></i>Punto de venta</td>
           <td class="ds">Caja con promociones combinables y pago en efectivo, tarjeta o QR. Escrito con los patrones Factory, Decorator y Strategy.</td>
           <td class="st">Python · POO</td>
           <td class="yr">2026</td>
         </tr>
-        <tr>
+        <tr id="api-autenticacion">
           <td class="no">L·09</td>
           <td class="nm"><i class="sym sym-offline"></i>API de autenticación</td>
           <td class="ds">Usuarios, roles y autorización con JWT, servida sobre HTTPS y HTTP/2.</td>
           <td class="st">Node.js · Express · MongoDB</td>
           <td class="yr">2025</td>
         </tr>
-        <tr>
+        <tr id="gestion-academica">
           <td class="no">L·10</td>
           <td class="nm"><i class="sym sym-offline"></i>Gestión académica</td>
           <td class="ds">Plataforma para institutos con paneles de administrador, docente y estudiante, inscripciones, descuentos y comprobantes de pago.</td>
           <td class="st">PHP · MySQL · JavaScript</td>
           <td class="yr">2025</td>
         </tr>
+        <!-- /proyectos:otros -->
       </tbody>
     </table>
   </div>

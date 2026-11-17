@@ -1,0 +1,43 @@
+# Regenera la sección de proyectos de index.html y en/index.html
+# cada vez que cambia data/projects.json (por ejemplo, al guardar desde Pages CMS).
+name: Actualizar proyectos
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - data/projects.json
+      - scripts/build.mjs
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: projects-build
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generar HTML
+        run: node scripts/build.mjs
+
+      - name: Guardar cambios
+        run: |
+          if git diff --quiet; then
+            echo "El HTML ya estaba al día."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html en/index.html
+          git commit -m "Actualizar proyectos desde data/projects.json"
+          git push
