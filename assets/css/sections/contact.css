@@ -1,7 +1,7 @@
-/* Contacto y pie de página. */
+/* Contacto y colofón. */
 
-.contact .wrap { display: flex; flex-direction: column; gap: 28px; }
-.contact .sec-head { margin-bottom: 0; }
+.contact .sec-head { margin-bottom: clamp(24px, 3vw, 40px); }
+.contact-body { display: flex; flex-direction: column; gap: 22px; }
 
 .big-mail {
   padding: 0;
@@ -11,25 +11,32 @@
   text-align: left;
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: clamp(22px, 5.4vw, 78px);
+  font-size: clamp(22px, 5.2vw, 76px);
   line-height: 1;
   letter-spacing: -.02em;
-  word-break: break-all;
+  overflow-wrap: anywhere;
   font-variation-settings: "wdth" 70;
   cursor: pointer;
   transition: font-variation-settings .5s var(--ease-io), color .3s;
 }
 .big-mail:hover { font-variation-settings: "wdth" 100; color: var(--accent); }
 
-.copied { min-height: 1.2em; font-family: var(--font-mono); font-size: 12px; color: var(--accent); }
+.copied { min-height: 1.2em; font-family: var(--font-mono); font-size: 12px; color: var(--ink-2); }
+.copied.ok { color: var(--accent); }
 
-footer { padding-block: 24px 36px; }
-footer .wrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 12px;
-  font-family: var(--font-mono);
-  font-size: 12px;
-  color: var(--ink-2);
+/* Colofón */
+.colophon { padding-block: 40px 48px; }
+.colophon .wrap {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--grid-gap);
+  align-items: start;
+}
+.colophon .about { grid-column: 1 / span 3; display: flex; flex-direction: column; gap: 6px; font-family: var(--font-mono); font-size: 12px; color: var(--ink-2); }
+.colophon .about b { font-weight: 500; color: var(--ink); }
+.colophon .note { grid-column: 4 / span 6; margin: 0; font-size: 15px; font-style: italic; line-height: 1.55; color: var(--ink-2); }
+.colophon .top { grid-column: 11 / span 2; justify-self: end; }
+
+@media (max-width: 900px) {
+  .colophon .about, .colophon .note, .colophon .top { grid-column: 1 / -1; justify-self: start; }
 }

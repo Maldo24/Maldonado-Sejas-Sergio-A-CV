@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<title>Certificado con código QR</title>
+<style>
+.i{stroke:#1c1b18}.i2{stroke:#5b574e}.r{stroke:#d3cbb9}.a{stroke:#c43a1c}
+.fi{fill:#1c1b18}.fa{fill:#c43a1c}.fp{fill:#f1ede3}
+.t{font:500 10px ui-monospace,Menlo,Consolas,monospace;fill:#5b574e;letter-spacing:.06em}
+.ta{fill:#c43a1c}
+@media (prefers-color-scheme:dark){
+.i{stroke:#ebe5d5}.i2{stroke:#a29b8a}.r{stroke:#333028}.a{stroke:#f0643f}
+.fi{fill:#ebe5d5}.fa{fill:#f0643f}.fp{fill:#14130f}
+.t{fill:#a29b8a}.ta{fill:#f0643f}}
+</style>
+<g transform="rotate(-3 160 100)">
+<rect class="i fp" x="62" y="28" width="196" height="144" stroke-width="1.2"/>
+<rect class="r" x="69" y="35" width="182" height="130" stroke-width=".8"/>
+<text class="t" x="84" y="58" style="font-size:9px">UMSS</text>
+<path class="i" stroke-width="4" d="M84 74 H190"/>
+<path class="r" stroke-width="3" d="M84 90 H226 M84 101 H210 M84 112 H180"/>
+<path class="i" stroke-width="1" d="M88 150 c6 -10 10 -10 12 -2 s6 6 10 -4 s8 -6 10 2 s6 2 12 -4"/>
+<path class="r" stroke-width=".8" d="M84 156 H150"/>
+<circle class="a" cx="174" cy="146" r="13" stroke-width="1.2"/>
+<circle class="a" cx="174" cy="146" r="9" stroke-width=".6" stroke-dasharray="1.5 2"/>
+<rect class="i" x="197" y="115" width="10" height="10" stroke-width="1.6"/>
+<rect class="fi" x="200" y="118" width="4" height="4"/>
+<rect class="i" x="221" y="115" width="10" height="10" stroke-width="1.6"/>
+<rect class="fi" x="224" y="118" width="4" height="4"/>
+<rect class="i" x="197" y="139" width="10" height="10" stroke-width="1.6"/>
+<rect class="fi" x="200" y="142" width="4" height="4"/>
+<rect class="fi" x="208" y="126" width="3.4" height="3.4"/>
+<rect class="fi" x="208" y="134" width="3.4" height="3.4"/>
+<rect class="fi" x="208" y="146" width="3.4" height="3.4"/>
+<rect class="fi" x="212" y="118" width="3.4" height="3.4"/>
+<rect class="fi" x="212" y="130" width="3.4" height="3.4"/>
+<rect class="fi" x="212" y="138" width="3.4" height="3.4"/>
+<rect class="fi" x="212" y="142" width="3.4" height="3.4"/>
+<rect class="fi" x="216" y="126" width="3.4" height="3.4"/>
+<rect class="fi" x="216" y="134" width="3.4" height="3.4"/>
+<rect class="fi" x="216" y="138" width="3.4" height="3.4"/>
+<rect class="fi" x="220" y="130" width="3.4" height="3.4"/>
+<rect class="fi" x="220" y="138" width="3.4" height="3.4"/>
+<rect class="fi" x="220" y="146" width="3.4" height="3.4"/>
+<rect class="fi" x="224" y="134" width="3.4" height="3.4"/>
+<rect class="fi" x="224" y="142" width="3.4" height="3.4"/>
+<rect class="fi" x="228" y="126" width="3.4" height="3.4"/>
+<rect class="fi" x="228" y="130" width="3.4" height="3.4"/>
+<rect class="fi" x="228" y="138" width="3.4" height="3.4"/>
+<rect class="fi" x="228" y="146" width="3.4" height="3.4"/>
+</g>
+</svg>

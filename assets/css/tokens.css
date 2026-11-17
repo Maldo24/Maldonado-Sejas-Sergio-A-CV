@@ -1,19 +1,22 @@
-/* Tokens de diseño: colores, tipografías y tema claro/oscuro.
-   Concepto: cuaderno topográfico con un solo acento (azul cobalto). */
+/* Tokens de diseño.
+   Concepto: una carta topográfica de Cochabamba. Papel crema, tinta casi negra,
+   curvas de nivel en siena y un solo acento bermellón, como las marcas de un topógrafo. */
 
 :root {
-  --paper: #f3f3ef;
-  --paper-2: #e9e9e3;
-  --ink: #121212;
-  --ink-2: #4c4c48;
-  --rule: #cfcfc7;
-  --contour: rgba(18, 18, 18, .09);
-  --accent: #2a3cff;
-  --accent-ink: #ffffff;
+  --paper: #f1ede3;
+  --paper-2: #e7e1d3;
+  --ink: #1c1b18;
+  --ink-2: #5b574e;
+  --ink-3: #8a8475;
+  --rule: #d3cbb9;
+  --contour: rgba(150, 92, 52, .20);
+  --contour-index: rgba(150, 92, 52, .42);
+  --accent: #c43a1c;
+  --accent-ink: #fff8f0;
 
   --font-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
-  --font-body: "Geist", "Segoe UI", system-ui, sans-serif;
-  --font-mono: "Geist Mono", ui-monospace, Menlo, monospace;
+  --font-body: "Newsreader", Georgia, "Times New Roman", serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
 
   --ease-out: cubic-bezier(.2, .8, .2, 1);
   --ease-io: cubic-bezier(.7, 0, .2, 1);
@@ -23,26 +26,30 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --paper: #0e0e0d;
-    --paper-2: #161615;
-    --ink: #efefe9;
-    --ink-2: #a3a39b;
-    --rule: #2b2b28;
-    --contour: rgba(239, 239, 233, .07);
-    --accent: #6f7cff;
-    --accent-ink: #0e0e0d;
+    --paper: #14130f;
+    --paper-2: #1c1a15;
+    --ink: #ebe5d5;
+    --ink-2: #a29b8a;
+    --ink-3: #6f6a5d;
+    --rule: #333028;
+    --contour: rgba(214, 158, 110, .13);
+    --contour-index: rgba(214, 158, 110, .28);
+    --accent: #f0643f;
+    --accent-ink: #14130f;
     color-scheme: dark;
   }
 }
 
 :root[data-theme="dark"] {
-  --paper: #0e0e0d;
-  --paper-2: #161615;
-  --ink: #efefe9;
-  --ink-2: #a3a39b;
-  --rule: #2b2b28;
-  --contour: rgba(239, 239, 233, .07);
-  --accent: #6f7cff;
-  --accent-ink: #0e0e0d;
+  --paper: #14130f;
+  --paper-2: #1c1a15;
+  --ink: #ebe5d5;
+  --ink-2: #a29b8a;
+  --ink-3: #6f6a5d;
+  --rule: #333028;
+  --contour: rgba(214, 158, 110, .13);
+  --contour-index: rgba(214, 158, 110, .28);
+  --accent: #f0643f;
+  --accent-ink: #14130f;
   color-scheme: dark;
 }

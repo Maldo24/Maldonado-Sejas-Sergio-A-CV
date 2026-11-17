@@ -3,22 +3,28 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Sergio Maldonado · Full stack developer</title>
-  <meta name="description" content="Sergio Maldonado, desarrollador full stack en Cochabamba, Bolivia. Productos web con React, TypeScript y Node.js.">
+  <title>Sergio Maldonado · Desarrollador full stack</title>
+  <meta name="description" content="Sergio Maldonado, desarrollador full stack en Cochabamba, Bolivia. Proyectos en línea hechos con React, TypeScript y Node.js.">
   <meta name="author" content="Sergio Andrés Maldonado Sejas">
-  <meta name="theme-color" content="#f3f3ef" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#0e0e0d" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f1ede3" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#14130f" media="(prefers-color-scheme: dark)">
+
+  <link rel="canonical" href="https://maldo24.github.io/Maldonado-Sejas-Sergio-A-CV/">
+  <link rel="alternate" hreflang="es" href="https://maldo24.github.io/Maldonado-Sejas-Sergio-A-CV/">
+  <link rel="alternate" hreflang="en" href="https://maldo24.github.io/Maldonado-Sejas-Sergio-A-CV/en/">
+  <link rel="alternate" hreflang="x-default" href="https://maldo24.github.io/Maldonado-Sejas-Sergio-A-CV/">
 
   <meta property="og:type" content="profile">
   <meta property="og:locale" content="es_BO">
-  <meta property="og:title" content="Sergio Maldonado · Full stack developer">
-  <meta property="og:description" content="Desarrollador full stack en Cochabamba, Bolivia. Productos web con React, TypeScript y Node.js.">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:title" content="Sergio Maldonado · Desarrollador full stack">
+  <meta property="og:description" content="Desarrollador full stack en Cochabamba, Bolivia. Proyectos en línea hechos con React, TypeScript y Node.js.">
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&display=swap">
 
   <link rel="stylesheet" href="assets/css/tokens.css">
   <link rel="stylesheet" href="assets/css/base.css">
@@ -26,159 +32,381 @@
   <link rel="stylesheet" href="assets/css/sections/hero.css">
   <link rel="stylesheet" href="assets/css/sections/work.css">
   <link rel="stylesheet" href="assets/css/sections/more.css">
-  <link rel="stylesheet" href="assets/css/sections/timeline.css">
-  <link rel="stylesheet" href="assets/css/sections/skills.css">
+  <link rel="stylesheet" href="assets/css/sections/log.css">
+  <link rel="stylesheet" href="assets/css/sections/tools.css">
   <link rel="stylesheet" href="assets/css/sections/contact.css">
 
-  <script type="module" src="assets/js/main.js"></script>
+  <script defer src="assets/js/modules/env.js"></script>
+  <script defer src="assets/js/modules/i18n.js"></script>
+  <script defer src="assets/js/modules/clock.js"></script>
+  <script defer src="assets/js/modules/name.js"></script>
+  <script defer src="assets/js/modules/topo.js"></script>
+  <script defer src="assets/js/modules/readout.js"></script>
+  <script defer src="assets/js/modules/profile.js"></script>
+  <script defer src="assets/js/modules/copy-mail.js"></script>
+  <script defer src="assets/js/main.js"></script>
 </head>
 <body>
-<div class="progress" aria-hidden="true"></div>
-<div class="cursor" aria-hidden="true"></div>
 
-<header class="hero">
+<header class="sheet" id="inicio">
   <canvas id="topo" aria-hidden="true"></canvas>
-  <div class="gut">
-    <div class="wrap top">
-      <span class="live"><b>Disponible</b> para proyectos</span>
-      <span>Cochabamba, Bolivia</span>
-      <span>17.39° S · 66.16° W · 2.558 m</span>
-      <span>Hora local <b id="clock">--:--</b></span>
-    </div>
+  <div class="frame" aria-hidden="true">
+    <span class="c tl">17°20′ S · 66°15′ O</span>
+    <span class="c br">17°26′ S · 66°05′ O</span>
   </div>
-  <div class="gut">
+
+  <div class="sheet-inner">
     <div class="wrap">
+      <div class="sheet-top">
+        <span><b>Sergio Andrés Maldonado Sejas</b></span>
+        <span class="sheet-id">Hoja 01 · Cochabamba, Bolivia</span>
+        <nav class="lang" aria-label="Idioma">
+          <a href="index.html" hreflang="es" lang="es" aria-current="page">ES</a>
+          <a href="en/index.html" hreflang="en" lang="en">EN</a>
+        </nav>
+      </div>
+
       <h1 class="name" aria-label="Sergio Maldonado"><span class="row" data-split>Sergio</span><span class="row" data-split>Maldonado</span></h1>
+
       <div class="hero-grid">
-        <p class="intro">Desarrollador full stack. Llevo productos web <em>de la base de datos a producción</em> con React, TypeScript y Node.js. Estudiante de 8.º semestre de Ingeniería Informática en la UMSS.</p>
-        <div class="rotator">
-          <span class="k">Ahora mismo soy</span>
-          <div class="rot" id="rot" aria-live="polite"><span class="on">Full stack developer</span><span>Líder técnico en NASA Space Apps</span><span>Speaker en Microsoft Tech Day</span><span>Miembro de Microsoft Student Ambassadors</span></div>
+        <div class="hero-text">
+          <p class="intro">Desarrollo productos web completos: <em>el modelo de datos, la API, la interfaz y el despliegue</em>. Estudio Ingeniería Informática en la UMSS y vivo en Cochabamba, a 2.558 metros.</p>
           <div class="cta-row">
-            <a class="btn solid" href="#trabajo" data-hover>Ver trabajo <span class="arr">↘</span></a>
-            <a class="btn" href="https://github.com/Maldo24" target="_blank" rel="noopener" data-hover>GitHub <span class="arr">↗</span></a>
+            <a class="btn solid" href="#trabajo">Ver proyectos <span class="arr down">↓</span></a>
+            <a class="btn" href="https://github.com/Maldo24" target="_blank" rel="noopener">GitHub <span class="arr">↗</span></a>
           </div>
         </div>
+
+        <dl class="card">
+          <div><dt class="k">Oficio</dt><dd>Desarrollo full stack con React, TypeScript y Node.js</dd></div>
+          <div><dt class="k">Estudio</dt><dd>Ingeniería Informática, UMSS · 8.º semestre</dd></div>
+          <div><dt class="k">Comunidad</dt><dd>Microsoft Student Ambassadors</dd></div>
+          <div><dt class="k">Idiomas</dt><dd>Español nativo · inglés intermedio avanzado</dd></div>
+          <div><dt class="k">Estado</dt><dd><i class="sym sym-live"></i>Disponible para proyectos</dd></div>
+        </dl>
+      </div>
+
+      <div class="sheet-foot">
+        <span class="readout" id="readout"><b>17°23′ S · 66°09′ O</b> · 2.558 m</span>
+        <span class="clock">Hora local <b id="clock">--:--</b> · UTC−4</span>
+        <span class="marks" aria-hidden="true">
+          <span class="north"><svg viewBox="0 0 12 18"><path d="M6 0 L11 18 L6 13 Z" fill="currentColor"/><path d="M6 0 L1 18 L6 13 Z" fill="none" stroke="currentColor"/></svg>N</span>
+          <span class="scale"><span class="scale-bar"><i></i><i></i><i></i><i></i></span><span class="scale-lbl"><span>0</span><span>1</span><span>2 km</span></span></span>
+        </span>
       </div>
     </div>
   </div>
 </header>
 
-<div class="ticker" aria-hidden="true"><div class="t" id="tick"><span>React</span><span>TypeScript</span><span>Node.js</span><span>Next.js</span><span>Express</span><span>PostgreSQL</span><span>MongoDB</span><span>Supabase</span><span>Firebase</span><span>Astro</span><span>Tailwind</span><span>Python</span><span>Power BI</span><span>GitHub Actions</span><span>Vercel</span><span>Cisco Packet Tracer</span></div></div>
+<div class="legend gut">
+  <div class="wrap">
+    <span class="k">Leyenda</span>
+    <span><i class="sym sym-live"></i>En línea</span>
+    <span><i class="sym sym-offline"></i>Sin despliegue público</span>
+    <span><i class="sym sym-star"></i>Hito</span>
+    <span><i class="sym sym-work"></i>Experiencia</span>
+    <span><i class="sym sym-edu"></i>Formación</span>
+  </div>
+</div>
 
 <main>
+
 <section id="trabajo" class="gut" aria-labelledby="h-work">
   <div class="wrap">
-    <div class="sec-head"><span class="k">Trabajo seleccionado · 4 productos en vivo</span><h2 id="h-work" class="reveal">Cosas que construí y están en línea</h2></div>
-    <ol class="index">
-      <li class="p" data-pv="0">
-        <span class="yr">2026</span>
-        <div class="ttl"><h3>Pacha-X</h3><span class="where">NASA Space Apps Challenge · Cochabamba</span><span class="live">En vivo</span></div>
-        <div class="inline-art art art-space" aria-hidden="true"><div class="orb"></div><div class="m1"></div><div class="m2"></div><span class="lb">Uyuni ↔ Marte</span></div>
-        <div class="txt">
-          <p>Plataforma que mapea la Luna y Marte y conecta cada zona con sus análogos en la Tierra, para investigación y entrenamiento de astronautas. Pone en el mapa sitios de Bolivia como el Salar de Uyuni. En español e inglés.</p>
-          <p class="role"><b>Líder técnico.</b> Arquitectura, modelo de datos en Supabase con seguridad por filas, curaduría de datos científicos, internacionalización, despliegue y pitch ante el jurado.</p>
-          <div class="tags"><span>React</span><span>TypeScript</span><span>Vite</span><span>Leaflet</span><span>Globo 3D</span><span>Supabase</span><span>Vercel</span></div>
-          <div class="links"><a class="btn solid" href="https://nasa-space-app-challenge-tawny.vercel.app" target="_blank" rel="noopener" data-hover>Ver en vivo <span class="arr">↗</span></a><a class="btn" href="https://github.com/Maldo24/NASA-SPACE-APP-CHALLENGE" target="_blank" rel="noopener" data-hover>Código</a></div>
+    <div class="sec-head">
+      <div class="sec-id"><span class="sec-no">§ 01</span><span class="k">Trabajo</span></div>
+      <div class="sec-title">
+        <h2 id="h-work" class="reveal">Cuatro proyectos en línea</h2>
+        <p class="sec-note">Todos hechos en equipo. En cada uno cuento qué parte fue mía.</p>
+      </div>
+    </div>
+
+    <ol class="work">
+      <li class="p" id="pacha-x">
+        <figure class="plate">
+          <img src="assets/img/pacha-x.svg" alt="Dibujo: los polígonos de sal del Salar de Uyuni junto a un Marte con cráteres." width="320" height="200" loading="lazy">
+          <figcaption><b>Lám. 1</b> — El Salar de Uyuni como análogo de Marte.</figcaption>
+        </figure>
+        <div class="p-body">
+          <div class="p-meta"><span class="no">L·01</span><span>2026</span><span><i class="sym sym-live"></i>En línea</span></div>
+          <h3>Pacha-X</h3>
+          <p class="where">NASA Space Apps Challenge · sede Cochabamba</p>
+          <p class="lede">Mapea la Luna y Marte y conecta cada zona con sus análogos en la Tierra, para investigación y entrenamiento de astronautas. Pone en el mapa sitios de Bolivia como el Salar de Uyuni. Funciona en español e inglés.</p>
+          <dl class="facts">
+            <div><dt class="k">Mi parte</dt><dd><b>Líder técnico.</b> Arquitectura, modelo de datos en Supabase con seguridad por filas, curaduría de datos científicos, internacionalización, despliegue y el pitch ante el jurado.</dd></div>
+            <div><dt class="k">Stack</dt><dd class="stack">React · TypeScript · Vite · Leaflet · globo 3D · Supabase · Vercel</dd></div>
+          </dl>
+          <p class="links"><a class="lnk primary" href="https://nasa-space-app-challenge-tawny.vercel.app" target="_blank" rel="noopener">Abrir el sitio ↗</a><a class="lnk" href="https://github.com/Maldo24/NASA-SPACE-APP-CHALLENGE" target="_blank" rel="noopener">Código ↗</a></p>
         </div>
       </li>
-      <li class="p" data-pv="1">
-        <span class="yr">2026</span>
-        <div class="ttl"><h3>AdmCursos UMSS</h3><span class="where">Universidad Mayor de San Simón</span><span class="live">En vivo</span></div>
-        <div class="inline-art art art-cert" aria-hidden="true"><div class="c"><div><b>CERTIFICADO</b><i></i><i style="width:70%"></i><i style="width:85%"></i></div><div class="q"></div></div></div>
-        <div class="txt">
-          <p>Sistema de gestión de cursos: oferta, grupos, docentes, preinscripciones, asistencia, reportes y certificados en PDF verificables con código QR.</p>
-          <p class="role"><b>Arquitecto y full stack.</b> Monorepo, base de datos PostgreSQL y migraciones, API REST, autenticación, módulo de certificados, hardening de seguridad y despliegue.</p>
-          <div class="tags"><span>React</span><span>Tailwind</span><span>Express</span><span>PostgreSQL</span><span>Drizzle ORM</span><span>Zod</span><span>PDFKit</span></div>
-          <div class="links"><a class="btn solid" href="https://valerydariana98.github.io/AdmCursosUMSS/" target="_blank" rel="noopener" data-hover>Ver en vivo <span class="arr">↗</span></a><a class="btn" href="https://github.com/valerydariana98/AdmCursosUMSS" target="_blank" rel="noopener" data-hover>Código</a></div>
+
+      <li class="p" id="admcursos">
+        <figure class="plate">
+          <img src="assets/img/admcursos.svg" alt="Dibujo: un certificado de la UMSS con sello y código QR." width="320" height="200" loading="lazy">
+          <figcaption><b>Lám. 2</b> — Certificado verificable con código QR.</figcaption>
+        </figure>
+        <div class="p-body">
+          <div class="p-meta"><span class="no">L·02</span><span>2026</span><span><i class="sym sym-live"></i>En línea</span></div>
+          <h3>AdmCursos UMSS</h3>
+          <p class="where">Universidad Mayor de San Simón</p>
+          <p class="lede">Gestiona cursos de principio a fin: oferta, grupos, docentes, preinscripciones, asistencia, reportes y certificados en PDF que se verifican con un código QR.</p>
+          <dl class="facts">
+            <div><dt class="k">Mi parte</dt><dd><b>Arquitecto y full stack.</b> Monorepo, base de datos PostgreSQL y migraciones, API REST, autenticación, módulo de certificados, endurecimiento de seguridad y despliegue.</dd></div>
+            <div><dt class="k">Stack</dt><dd class="stack">React · Tailwind · Express · PostgreSQL · Drizzle ORM · Zod · PDFKit</dd></div>
+          </dl>
+          <p class="links"><a class="lnk primary" href="https://valerydariana98.github.io/AdmCursosUMSS/" target="_blank" rel="noopener">Abrir el sitio ↗</a><a class="lnk" href="https://github.com/valerydariana98/AdmCursosUMSS" target="_blank" rel="noopener">Código ↗</a></p>
         </div>
       </li>
-      <li class="p" data-pv="2">
-        <span class="yr">2026</span>
-        <div class="ttl"><h3>Gustitos y Cafecitos</h3><span class="where">App social</span><span class="live">En vivo</span></div>
-        <div class="inline-art art art-vote" aria-hidden="true"><div class="o w">Cafecito del centro<i style="--v:82%"></i></div><div class="o">Salteñería<i style="--v:50%"></i></div><div class="o">Pizzería<i style="--v:24%"></i></div></div>
-        <div class="txt">
-          <p>Para decidir a dónde salir: armas un grupo, proponen restaurantes y cafés y votan. Invitaciones por código o enlace, notificaciones, panel de administración y recuperación de cuenta.</p>
-          <p class="role"><b>Full stack.</b> Backend completo con autenticación JWT, lógica de grupos y votación, interfaz en React y CI/CD con GitHub Actions.</p>
-          <div class="tags"><span>React 19</span><span>TypeScript</span><span>Express 5</span><span>MongoDB</span><span>JWT</span><span>GitHub Actions</span></div>
-          <div class="links"><a class="btn solid" href="https://maldo24.github.io/gustitos-y-cafecitos/" target="_blank" rel="noopener" data-hover>Ver en vivo <span class="arr">↗</span></a><a class="btn" href="https://github.com/Maldo24/gustitos-y-cafecitos" target="_blank" rel="noopener" data-hover>Código</a></div>
+
+      <li class="p" id="gustitos">
+        <figure class="plate">
+          <img src="assets/img/gustitos.svg" alt="Dibujo: una votación contada con palitos; gana el café del centro." width="320" height="200" loading="lazy">
+          <figcaption><b>Lám. 3</b> — La votación del grupo, contada a mano.</figcaption>
+        </figure>
+        <div class="p-body">
+          <div class="p-meta"><span class="no">L·03</span><span>2026</span><span><i class="sym sym-live"></i>En línea</span></div>
+          <h3>Gustitos y Cafecitos</h3>
+          <p class="where">App social</p>
+          <p class="lede">Para decidir a dónde salir: armas un grupo, cada quien propone restaurantes y cafés, y votan. Invitaciones por código o enlace, notificaciones, panel de administración y recuperación de cuenta.</p>
+          <dl class="facts">
+            <div><dt class="k">Mi parte</dt><dd><b>Full stack.</b> Todo el backend con autenticación JWT, la lógica de grupos y votación, la interfaz en React y el CI/CD con GitHub Actions.</dd></div>
+            <div><dt class="k">Stack</dt><dd class="stack">React 19 · TypeScript · Express 5 · MongoDB · JWT · GitHub Actions</dd></div>
+          </dl>
+          <p class="links"><a class="lnk primary" href="https://maldo24.github.io/gustitos-y-cafecitos/" target="_blank" rel="noopener">Abrir el sitio ↗</a><a class="lnk" href="https://github.com/Maldo24/gustitos-y-cafecitos" target="_blank" rel="noopener">Código ↗</a></p>
         </div>
       </li>
-      <li class="p" data-pv="3">
-        <span class="yr">2025</span>
-        <div class="ttl"><h3>Servineo</h3><span class="where">Marketplace de servicios</span><span class="live">En vivo</span></div>
-        <div class="inline-art art art-cal" aria-hidden="true" data-cal></div>
-        <div class="txt">
-          <p>Conecta hogares de Cochabamba con técnicos calificados: búsqueda por ubicación, perfiles y agenda de citas en línea.</p>
-          <p class="role"><b>Módulo de agenda.</b> Creación, edición y cancelación de citas, calendario responsive, reglas de disponibilidad horaria e integración con Google Calendar.</p>
-          <div class="tags"><span>Next.js</span><span>TypeScript</span><span>Material UI</span><span>Express</span><span>MongoDB</span><span>Google Calendar API</span></div>
-          <div class="links"><a class="btn solid" href="https://servineo-frontend-lorem.vercel.app" target="_blank" rel="noopener" data-hover>Ver en vivo <span class="arr">↗</span></a><a class="btn" href="https://github.com/Servineo/servineo-frontend" target="_blank" rel="noopener" data-hover>Código</a></div>
+
+      <li class="p" id="servineo">
+        <figure class="plate">
+          <img src="assets/img/servineo.svg" alt="Dibujo: un calendario mensual con días ocupados y una cita marcada a las 10:00." width="320" height="200" loading="lazy">
+          <figcaption><b>Lám. 4</b> — La agenda de un técnico.</figcaption>
+        </figure>
+        <div class="p-body">
+          <div class="p-meta"><span class="no">L·04</span><span>2025</span><span><i class="sym sym-live"></i>En línea</span></div>
+          <h3>Servineo</h3>
+          <p class="where">Marketplace de servicios</p>
+          <p class="lede">Conecta hogares de Cochabamba con técnicos calificados: búsqueda por ubicación, perfiles y agenda de citas en línea.</p>
+          <dl class="facts">
+            <div><dt class="k">Mi parte</dt><dd><b>Módulo de agenda.</b> Crear, editar y cancelar citas, calendario adaptable a móvil, reglas de disponibilidad horaria e integración con Google Calendar.</dd></div>
+            <div><dt class="k">Stack</dt><dd class="stack">Next.js · TypeScript · Material UI · Express · MongoDB · Google Calendar API</dd></div>
+          </dl>
+          <p class="links"><a class="lnk primary" href="https://servineo-frontend-lorem.vercel.app" target="_blank" rel="noopener">Abrir el sitio ↗</a><a class="lnk" href="https://github.com/Servineo/servineo-frontend" target="_blank" rel="noopener">Código ↗</a></p>
         </div>
       </li>
     </ol>
   </div>
 </section>
 
-<div class="preview" aria-hidden="true"></div>
-
 <section class="gut" aria-labelledby="h-more">
   <div class="wrap">
-    <div class="sec-head"><span class="k">Más proyectos</span><h2 id="h-more" class="reveal">También hice</h2></div>
-    <div class="bento">
-      <div class="cell c-a"><span class="k">2026 · en vivo</span><h3>SansiStore</h3><p>E-commerce universitario con pedidos, entregas y devoluciones. Flujo de devoluciones, validación geográfica de entregas y pruebas end-to-end.</p><a href="https://sansistore-umss.vercel.app" target="_blank" rel="noopener" data-hover>Ver en vivo ↗</a><span class="st">Astro · React · Firebase · Playwright</span></div>
-      <div class="cell c-b"><span class="k">2026</span><h3>DevCV</h3><p>Generador de CV y portafolio para desarrolladores: registro, experiencia, habilidades, integración con GitHub y reportes.</p><span class="st">React · TypeScript · Tailwind</span></div>
-      <div class="cell c-c"><span class="k">2026</span><h3>Recetitas</h3><p>App instalable (PWA) para guardar recetas y organizarlas por antojo.</p><span class="st">React · Express · PWA</span></div>
-      <div class="cell c-d"><span class="k">2025</span><h3>API de autenticación</h3><p>Usuarios, roles y autorización JWT sobre HTTPS y HTTP/2.</p><span class="st">Node.js · Express · MongoDB</span></div>
-      <div class="cell c-e"><span class="k">2026</span><h3>Punto de venta</h3><p>Caja con promociones combinables y pagos en efectivo, tarjeta o QR, con patrones Factory, Decorator y Strategy.</p><span class="st">Python · POO</span></div>
-      <div class="cell c-f"><span class="k">2025</span><h3>Gestión académica</h3><p>Plataforma para institutos con paneles de administrador, docente y estudiante, inscripciones, descuentos y comprobantes de pago.</p><span class="st">PHP · MySQL · JavaScript</span></div>
+    <div class="sec-head">
+      <div class="sec-id"><span class="sec-no">§ 02</span><span class="k">Índice</span></div>
+      <div class="sec-title">
+        <h2 id="h-more" class="reveal">Otros proyectos</h2>
+        <p class="sec-note">Más chicos, o hechos para practicar algo concreto.</p>
+      </div>
     </div>
+
+    <table class="sheets">
+      <thead>
+        <tr><th class="k" scope="col">Hoja</th><th class="k" scope="col">Proyecto</th><th class="k" scope="col">Qué es</th><th class="k" scope="col">Stack</th><th class="k" scope="col">Año</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="no">L·05</td>
+          <td class="nm"><i class="sym sym-live"></i>SansiStore <a class="lnk primary" href="https://sansistore-umss.vercel.app" target="_blank" rel="noopener">abrir ↗</a></td>
+          <td class="ds">E-commerce universitario con pedidos, entregas y devoluciones. Hice el flujo de devoluciones, la validación geográfica de entregas y las pruebas end-to-end.</td>
+          <td class="st">Astro · React · Firebase · Playwright</td>
+          <td class="yr">2026</td>
+        </tr>
+        <tr>
+          <td class="no">L·06</td>
+          <td class="nm"><i class="sym sym-offline"></i>DevCV</td>
+          <td class="ds">Generador de CV y portafolio para desarrolladores: registro, experiencia, habilidades, integración con GitHub y reportes.</td>
+          <td class="st">React · TypeScript · Tailwind</td>
+          <td class="yr">2026</td>
+        </tr>
+        <tr>
+          <td class="no">L·07</td>
+          <td class="nm"><i class="sym sym-offline"></i>Recetitas</td>
+          <td class="ds">App instalable (PWA) para guardar recetas y ordenarlas por antojo.</td>
+          <td class="st">React · Express · PWA</td>
+          <td class="yr">2026</td>
+        </tr>
+        <tr>
+          <td class="no">L·08</td>
+          <td class="nm"><i class="sym sym-offline"></i>Punto de venta</td>
+          <td class="ds">Caja con promociones combinables y pago en efectivo, tarjeta o QR. Escrito con los patrones Factory, Decorator y Strategy.</td>
+          <td class="st">Python · POO</td>
+          <td class="yr">2026</td>
+        </tr>
+        <tr>
+          <td class="no">L·09</td>
+          <td class="nm"><i class="sym sym-offline"></i>API de autenticación</td>
+          <td class="ds">Usuarios, roles y autorización con JWT, servida sobre HTTPS y HTTP/2.</td>
+          <td class="st">Node.js · Express · MongoDB</td>
+          <td class="yr">2025</td>
+        </tr>
+        <tr>
+          <td class="no">L·10</td>
+          <td class="nm"><i class="sym sym-offline"></i>Gestión académica</td>
+          <td class="ds">Plataforma para institutos con paneles de administrador, docente y estudiante, inscripciones, descuentos y comprobantes de pago.</td>
+          <td class="st">PHP · MySQL · JavaScript</td>
+          <td class="yr">2025</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </section>
 
 <section class="gut" aria-labelledby="h-log">
   <div class="wrap">
-    <div class="sec-head"><span class="k">Trayectoria</span><h2 id="h-log" class="reveal">Escenarios y experiencia</h2></div>
-    <ol class="log">
-      <li class="star"><span class="d">Nov. 2026</span><h3>Hackathon NASA Space Apps Challenge</h3><p>Sede Cochabamba. Lideré al equipo que construyó Pacha-X.</p></li>
-      <li class="star"><span class="d">Ago. 2026</span><h3>Speaker en Microsoft Tech Day Cochabamba</h3><p>Charla "Power BI, Ciencia de Datos y Big Data" en la UMSS, con Microsoft Student Ambassadors, comunidad de la que formo parte. <a href="https://www.instagram.com/p/DbeEqwgDLNw/" target="_blank" rel="noopener" data-hover>Ver publicación ↗</a></p></li>
-      <li><span class="d">Ago. y oct. 2025</span><h3>Operador del SIREPE</h3><p>Tribunal Electoral Departamental. Elecciones Generales de Bolivia 2025, primera y segunda vuelta.</p></li>
-      <li><span class="d">2025 – hoy</span><h3>Desarrollador full stack</h3><p>Productos web en equipos ágiles con Scrum, Git flow, revisión de código, CI/CD y despliegue continuo en Vercel, GitHub Pages y Render.</p></li>
+    <div class="sec-head">
+      <div class="sec-id"><span class="sec-no">§ 03</span><span class="k">Bitácora</span></div>
+      <div class="sec-title">
+        <h2 id="h-log" class="reveal">La ruta hasta aquí</h2>
+        <p class="sec-note">Cada punto es un hito, un trabajo o un curso. La altura no mide nada en particular: solo sube.</p>
+      </div>
+    </div>
+
+    <figure class="profile" id="profile" aria-hidden="true"></figure>
+
+    <ol class="log" reversed>
+      <li data-type="star" data-year="2026" data-short="NASA Space Apps">
+        <span class="no">09</span><span class="d">Nov. 2026</span>
+        <h3><i class="sym sym-star"></i>Hackathon NASA Space Apps Challenge</h3>
+        <p>Sede Cochabamba. Lideré al equipo que construyó <a href="#pacha-x">Pacha-X</a>.</p>
+      </li>
+      <li data-type="star" data-year="2026" data-short="Microsoft Tech Day">
+        <span class="no">08</span><span class="d">Ago. 2026</span>
+        <h3><i class="sym sym-star"></i>Speaker en Microsoft Tech Day Cochabamba</h3>
+        <p>Di la charla «Power BI, Ciencia de Datos y Big Data» en la UMSS, con Microsoft Student Ambassadors. Recibí el certificado de speaker. <a href="https://www.instagram.com/p/DbeEqwgDLNw/" target="_blank" rel="noopener">Ver publicación ↗</a></p>
+      </li>
+      <li data-type="work" data-year="2025">
+        <span class="no">07</span><span class="d">Ago. y oct. 2025</span>
+        <h3><i class="sym sym-work"></i>Operador del SIREPE</h3>
+        <p>Tribunal Electoral Departamental, en el sistema de resultados preliminares de las Elecciones Generales 2025: primera y segunda vuelta.</p>
+      </li>
+      <li data-type="edu" data-year="2025">
+        <span class="no">06</span><span class="d">Ago. 2025 · 48 h</span>
+        <h3><i class="sym sym-edu"></i>Ciberseguridad y prevención de ataques en servidores</h3>
+        <p>Academia Tecnológica Génesis.</p>
+      </li>
+      <li data-type="work" data-year="2025">
+        <span class="no">05</span><span class="d">2025 – hoy</span>
+        <h3><i class="sym sym-work"></i>Desarrollador full stack</h3>
+        <p>Productos web en equipos ágiles: Scrum, Git flow, revisión de código, CI/CD y despliegue continuo en Vercel, GitHub Pages y Render.</p>
+      </li>
+      <li data-type="edu" data-year="2025">
+        <span class="no">04</span><span class="d">Mar. – abr. 2025 · 130 h</span>
+        <h3><i class="sym sym-edu"></i>Programación en Python</h3>
+        <p>Universidad Pública de El Alto.</p>
+      </li>
+      <li data-type="edu" data-year="2024">
+        <span class="no">03</span><span class="d">Sep. – oct. 2024 · 320 h</span>
+        <h3><i class="sym sym-edu"></i>Inglés, tres cursos seguidos</h3>
+        <p>Basic and Intermediate English Course, 160 h (UMSS). Inglés Básico e Inglés Intermedio, 80 h cada uno (Sociedad Académica para el Desarrollo Educativo).</p>
+      </li>
+      <li data-type="edu">
+        <span class="no">02</span><span class="d">En curso · 8.º semestre</span>
+        <h3><i class="sym sym-edu"></i>Ingeniería Informática</h3>
+        <p>Universidad Mayor de San Simón, Cochabamba.</p>
+      </li>
+      <li data-type="edu" data-year="2022">
+        <span class="no">01</span><span class="d">2011 – 2022</span>
+        <h3><i class="sym sym-edu"></i>Bachiller</h3>
+        <p>Colegio Esclavas del Sagrado Corazón de Jesús.</p>
+      </li>
     </ol>
   </div>
 </section>
 
-<section class="gut" aria-labelledby="h-sk">
+<section class="gut" aria-labelledby="h-tools">
   <div class="wrap">
-    <div class="sec-head"><span class="k">Herramientas y formación</span><h2 id="h-sk" class="reveal">Con qué trabajo</h2></div>
-    <div class="skills">
-      <div class="sk"><span class="k">Frontend</span><ul><li>React</li><li>Next.js</li><li>Astro</li><li>TypeScript</li><li>Tailwind · Material UI</li><li>Leaflet</li></ul></div>
-      <div class="sk"><span class="k">Backend y datos</span><ul><li>Node.js · Express</li><li>API REST · JWT · Zod</li><li>PostgreSQL · Drizzle</li><li>MongoDB</li><li>Supabase · Firebase</li><li>Python · Power BI</li></ul></div>
-      <div class="sk"><span class="k">Entrega y equipo</span><ul><li>Git · GitHub Actions</li><li>Vercel · Render</li><li>Playwright</li><li>Scrum</li><li>Cisco Packet Tracer</li><li>Español nativo · Inglés intermedio avanzado</li></ul></div>
+    <div class="sec-head">
+      <div class="sec-id"><span class="sec-no">§ 04</span><span class="k">Instrumentos</span></div>
+      <div class="sec-title">
+        <h2 id="h-tools" class="reveal">Con qué trabajo</h2>
+        <p class="sec-note">Y dónde lo usé, para que no sea solo una lista.</p>
+      </div>
     </div>
-    <ol class="edu">
-      <li><span class="d">8.º semestre</span><b>Ingeniería Informática</b><span class="s">Universidad Mayor de San Simón</span></li>
-      <li class="hl"><span class="d">2026 · certificación</span><b>Certificado de Speaker</b><span class="s">Microsoft Tech Day Cochabamba</span></li>
-      <li><span class="d">Ago. 2025 · 48 h</span><b>Ciberseguridad y prevención de ataques en servidores</b><span class="s">Academia Tecnológica Génesis</span></li>
-      <li><span class="d">Mar. – abr. 2025 · 130 h</span><b>Programación en Python</b><span class="s">Universidad Pública de El Alto</span></li>
-      <li><span class="d">Sep. – oct. 2024 · 160 h</span><b>Basic and Intermediate English Course</b><span class="s">Universidad Mayor de San Simón</span></li>
-      <li><span class="d">Sep. – oct. 2024 · 80 h</span><b>Curso de Inglés Intermedio</b><span class="s">Sociedad Académica para el Desarrollo Educativo</span></li>
-      <li><span class="d">Sep. 2024 · 80 h</span><b>Curso de Inglés Básico</b><span class="s">Sociedad Académica para el Desarrollo Educativo</span></li>
-      <li><span class="d">Feb. 2011 – dic. 2022</span><b>Bachiller</b><span class="s">Colegio Esclavas del Sagrado Corazón de Jesús</span></li>
-    </ol>
+
+    <div class="tools">
+      <div class="tool-group">
+        <h3 class="k">Frontend</h3>
+        <dl>
+          <div><dt>React</dt><dd>Pacha-X, AdmCursos, Gustitos, SansiStore, DevCV, Recetitas</dd></div>
+          <div><dt>TypeScript</dt><dd>Pacha-X, Gustitos, Servineo, DevCV</dd></div>
+          <div><dt>Next.js · Astro</dt><dd>Servineo · SansiStore</dd></div>
+          <div><dt>Tailwind · Material UI</dt><dd>AdmCursos, DevCV · Servineo</dd></div>
+          <div><dt>Leaflet</dt><dd>Los mapas de Pacha-X</dd></div>
+        </dl>
+      </div>
+      <div class="tool-group">
+        <h3 class="k">Backend y datos</h3>
+        <dl>
+          <div><dt>Node.js · Express</dt><dd>AdmCursos, Gustitos, Servineo, Recetitas, API de autenticación</dd></div>
+          <div><dt>PostgreSQL · Drizzle</dt><dd>AdmCursos</dd></div>
+          <div><dt>MongoDB</dt><dd>Gustitos, Servineo, API de autenticación</dd></div>
+          <div><dt>Supabase · Firebase</dt><dd>Pacha-X · SansiStore</dd></div>
+          <div><dt>JWT · Zod</dt><dd>Gustitos, API de autenticación · AdmCursos</dd></div>
+          <div><dt>Python · Power BI</dt><dd>Punto de venta · la charla del Tech Day</dd></div>
+          <div><dt>PHP · MySQL</dt><dd>Gestión académica</dd></div>
+        </dl>
+      </div>
+      <div class="tool-group">
+        <h3 class="k">Entrega y equipo</h3>
+        <dl>
+          <div><dt>Git · GitHub Actions</dt><dd>Todos los proyectos · CI/CD de Gustitos</dd></div>
+          <div><dt>Vercel</dt><dd>Pacha-X, Servineo, SansiStore</dd></div>
+          <div><dt>GitHub Pages</dt><dd>AdmCursos, Gustitos</dd></div>
+          <div><dt>Playwright</dt><dd>Pruebas end-to-end de SansiStore</dd></div>
+          <div><dt>Scrum · Git flow</dt><dd>Trabajo en equipo, con revisión de código</dd></div>
+          <div><dt>Cisco Packet Tracer</dt><dd>Diseño y simulación de redes</dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <div class="langs">
+      <p><span class="k">Español</span>nativo</p>
+      <p><span class="k">Inglés</span>intermedio avanzado</p>
+    </div>
   </div>
 </section>
 
 <section class="gut contact" aria-labelledby="h-c">
   <div class="wrap">
-    <div class="sec-head"><span class="k">Contacto</span><h2 id="h-c" class="reveal">Hablemos</h2></div>
-    <button class="big-mail" id="mail" type="button" data-email="maldonadosejassergioandres@gmail.com" data-hover aria-label="Copiar correo maldonadosejassergioandres@gmail.com">maldonadosejassergioandres@gmail.com</button>
-    <span class="copied" id="copied" aria-live="polite">Toca el correo para copiarlo</span>
-    <div class="cta-row"><a class="btn" href="https://github.com/Maldo24" target="_blank" rel="noopener" data-hover>github.com/Maldo24 <span class="arr">↗</span></a></div>
+    <div class="sec-head">
+      <div class="sec-id"><span class="sec-no">§ 05</span><span class="k">Contacto</span></div>
+      <div class="sec-title">
+        <h2 id="h-c" class="reveal">Escríbeme</h2>
+        <p class="sec-note">Para un proyecto, una charla o una pregunta. En español o en inglés.</p>
+      </div>
+    </div>
+    <div class="contact-body">
+      <button class="big-mail" id="mail" type="button" data-email="maldonadosejassergioandres@gmail.com" aria-label="Copiar el correo maldonadosejassergioandres@gmail.com">maldonadosejassergioandres@gmail.com</button>
+      <span class="copied" id="copied" aria-live="polite">Toca el correo para copiarlo.</span>
+      <div class="cta-row">
+        <a class="btn solid" href="mailto:maldonadosejassergioandres@gmail.com">Abrir en mi correo <span class="arr">↗</span></a>
+        <a class="btn" href="https://github.com/Maldo24" target="_blank" rel="noopener">github.com/Maldo24 <span class="arr">↗</span></a>
+      </div>
+    </div>
   </div>
 </section>
+
 </main>
 
-<footer class="gut"><div class="wrap"><span>Sergio Andrés Maldonado Sejas · Nacionalidad boliviana</span><span>Hecho en Cochabamba · 2026</span></div></footer>
+<footer class="colophon gut">
+  <div class="wrap">
+    <div class="about">
+      <b>Sergio Andrés Maldonado Sejas</b>
+      <span>Boliviano · Cochabamba</span>
+      <span>Edición 2026</span>
+    </div>
+    <p class="note">Colofón. Compuesto en Archivo, Newsreader e IBM Plex Mono. Las curvas de nivel se dibujan en tu navegador con ruido y marching squares; cada quinta curva es una curva maestra, como en una carta topográfica. Sin frameworks ni plantillas.</p>
+    <a class="lnk top" href="#inicio">Volver arriba ↑</a>
+  </div>
+</footer>
 
 </body>
 </html>

@@ -1,0 +1,66 @@
+/* Bitácora: perfil de elevación (lo dibuja JS a partir de la lista) + lista de hitos. */
+
+.profile {
+  position: relative;
+  height: clamp(200px, 24vw, 280px);
+  margin: 0 0 clamp(28px, 4vw, 48px);
+}
+.profile svg { display: block; width: 100%; height: 100%; overflow: visible; }
+
+.pf-grid { stroke: var(--rule); stroke-width: 1; stroke-dasharray: 2 4; }
+.pf-base { stroke: var(--ink); stroke-width: 1; }
+.pf-hatch { stroke: var(--contour-index); stroke-width: 1; }
+.pf-area { fill: url(#pf-hatch); }
+.pf-line { fill: none; stroke: var(--ink); stroke-width: 1.5; }
+.pf-drop { stroke: var(--ink-3); stroke-width: 1; stroke-dasharray: 2 3; }
+.pf-txt { font-family: var(--font-mono); font-size: 10px; fill: var(--ink-2); letter-spacing: .04em; }
+.pf-lbl { font-family: var(--font-display); font-size: 14px; font-weight: 700; fill: var(--ink); font-variation-settings: "wdth" 85; }
+
+.pf-mk { cursor: default; }
+.pf-mk .hit { fill: transparent; }
+.pf-mk .s { fill: var(--paper); stroke: var(--ink); stroke-width: 1.5; transition: fill .2s, stroke .2s; }
+.pf-mk.star .s { fill: var(--accent); stroke: var(--accent); }
+.pf-mk.work .s { fill: var(--ink); }
+.pf-mk.on .s { fill: var(--accent); stroke: var(--accent); }
+.pf-mk.on .pf-txt { fill: var(--accent); }
+
+/* Lista */
+.log {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--ink);
+}
+.log li {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--grid-gap);
+  align-items: baseline;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--rule);
+  transition: background .2s;
+}
+.log li.on { background: var(--paper-2); }
+
+.log .no { grid-column: 1 / span 1; padding-left: 8px; font-family: var(--font-mono); font-size: 12px; color: var(--ink-3); }
+.log li.on .no { color: var(--accent); }
+.log .d { grid-column: 2 / span 2; font-family: var(--font-mono); font-size: 12px; color: var(--ink-2); }
+.log h3 {
+  grid-column: 4 / span 4;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  font-size: clamp(20px, 2.2vw, 28px);
+  line-height: 1.1;
+  letter-spacing: -.01em;
+  font-variation-settings: "wdth" 85;
+}
+.log h3 .sym { transform: translateY(-.12em); }
+.log p { grid-column: 8 / span 5; margin: 0; font-size: 16px; line-height: 1.5; color: var(--ink-2); }
+.log p a { color: var(--accent); }
+
+@media (max-width: 900px) {
+  .log li { grid-template-columns: 3.5ch 1fr; gap: 4px 12px; padding: 18px 0; }
+  .log .no { grid-column: 1; grid-row: 1 / span 3; padding-left: 0; }
+  .log .d, .log h3, .log p { grid-column: 2; }
+}

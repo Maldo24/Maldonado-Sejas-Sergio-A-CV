@@ -1,45 +1,54 @@
-/* Más proyectos: retícula tipo bento. */
+/* Otros proyectos: índice de hojas en forma de tabla. */
 
-.bento {
-  display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  gap: 1px;
-  background: var(--rule);
-  border: 1px solid var(--rule);
+.sheets {
+  width: 100%;
+  border-collapse: collapse;
+  border-top: 1px solid var(--ink);
 }
-
-.cell {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  min-width: 0;
-  padding: 24px;
-  background: var(--paper);
-  transition: background .3s, color .3s;
+.sheets th {
+  padding: 10px 16px 10px 0;
+  border-bottom: 1px solid var(--ink);
+  text-align: left;
+  vertical-align: bottom;
 }
-.cell:hover { background: var(--ink); color: var(--paper); }
-.cell:hover .k,
-.cell:hover p,
-.cell:hover .st { color: var(--paper); }
-
-.cell h3 {
-  font-size: clamp(24px, 2.6vw, 34px);
-  line-height: 1;
-  letter-spacing: -.01em;
-  font-variation-settings: "wdth" 80;
+.sheets td {
+  padding: 18px 16px 18px 0;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: baseline;
 }
-.cell p { margin: 0; font-size: 15px; color: var(--ink-2); }
-.cell .st { margin-top: auto; font-family: var(--font-mono); font-size: 12px; color: var(--ink-2); }
-.cell a { color: var(--accent); font-weight: 500; font-size: 14px; }
+.sheets tbody tr { transition: background .2s; }
+.sheets tbody tr:hover { background: var(--paper-2); }
 
-/* Anchos de celda: dos filas que suman 12 columnas */
-.c-a, .c-f { grid-column: span 5; }
-.c-b, .c-e { grid-column: span 4; }
-.c-c, .c-d { grid-column: span 3; }
+.sheets .no,
+.sheets .yr { font-family: var(--font-mono); font-size: 12px; color: var(--ink-2); white-space: nowrap; }
+.sheets .no { color: var(--accent); padding-left: 8px; }
+.sheets th:first-child { padding-left: 8px; }
 
-@media (max-width: 900px) {
-  .cell { grid-column: span 6; }
+.sheets .nm {
+  font-family: var(--font-display);
+  font-size: clamp(20px, 2vw, 24px);
+  font-weight: 700;
+  line-height: 1.1;
+  font-variation-settings: "wdth" 85;
+  white-space: nowrap;
 }
-@media (max-width: 560px) {
-  .cell { grid-column: 1 / -1; }
+.sheets .nm .sym { margin-right: 10px; vertical-align: .2em; }
+.sheets .nm a { font-family: var(--font-mono); font-size: 12px; font-weight: 400; margin-left: 10px; }
+
+.sheets .ds { font-size: 16px; line-height: 1.45; max-width: 52ch; }
+.sheets .st { font-family: var(--font-mono); font-size: 12px; line-height: 1.6; color: var(--ink-2); }
+
+@media (max-width: 760px) {
+  .sheets thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  .sheets tbody tr {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 6px 14px;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .sheets td { padding: 0; border: 0; }
+  .sheets .no { padding-left: 0; }
+  .sheets .yr { grid-column: 2; grid-row: 1; justify-self: end; }
+  .sheets .nm, .sheets .ds, .sheets .st { grid-column: 1 / -1; white-space: normal; }
 }

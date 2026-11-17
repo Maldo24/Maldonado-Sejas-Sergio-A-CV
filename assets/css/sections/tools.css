@@ -1,0 +1,37 @@
+/* Herramientas: cada una con los proyectos donde se usó. */
+
+.tools {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(20px, 3vw, 40px);
+}
+
+.tool-group h3 { padding: 12px 0 10px; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--rule); }
+.tool-group dl { margin: 0; }
+.tool-group div { padding-block: 11px; border-bottom: 1px solid var(--rule); }
+.tool-group dt {
+  font-family: var(--font-display);
+  font-size: clamp(19px, 1.8vw, 22px);
+  font-weight: 650;
+  line-height: 1.2;
+  font-variation-settings: "wdth" 88;
+}
+.tool-group dd { margin: 3px 0 0; font-size: 15px; font-style: italic; line-height: 1.4; color: var(--ink-2); }
+
+.langs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 40px;
+  margin-top: clamp(36px, 5vw, 56px);
+  padding-top: 14px;
+  border-top: 1px solid var(--ink);
+}
+.langs p { margin: 0; font-size: 17px; }
+.langs .k { margin-right: 10px; }
+
+@media (max-width: 900px) {
+  .tools { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  .tools { grid-template-columns: 1fr; }
+}
